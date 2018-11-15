@@ -4,8 +4,8 @@ RUN apt-get -y update && apt-get install -y \
 curl \
 git
 WORKDIR /app
-RUN cd /var/www/html && git clone https://github.com/Art-of-WiFi/UniFi-API-browser.git . &&\
-curl https://raw.githubusercontent.com/benderstwin/Unifi-API-Browser/master/config.php > /var/www/html/
+RUN cd /var/www/html && git clone https://github.com/Art-of-WiFi/UniFi-API-browser.git .
+RUN curl https://raw.githubusercontent.com/benderstwin/Unifi-API-Browser/master/config.php > /var/www/html/
 ENV ENV_USER=user \
     ENV_PWD=pass \
     ENV_URL=url
