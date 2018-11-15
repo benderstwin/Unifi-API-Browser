@@ -13,7 +13,7 @@
  * Remove or comment out this section when using the Multi controller configuration method
  */
 $controlleruser     = getenv('ENV_USER'); // the user name for access to the UniFi Controller
-$controllerpassword = getenv('ENV_PW'); // the password for access to the UniFi Controller
+$controllerpassword = getenv('ENV_PWD'); // the password for access to the UniFi Controller
 $controllerurl      = getenv('ENV_URL'); // full url to the UniFi Controller, eg. 'https://22.22.11.11:8443'
 /**
  * Multi controller configuration
